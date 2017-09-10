@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26606.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{162C7E4D-2DCE-4A22-9FEB-5211042DC1F7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E710E87F-43E3-4D6D-8A27-6B750C7E14F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F41584D0-6C11-4532-B4C3-8382ED98540E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "My.AspNetCore.Localization.Json", "src\My.AspNetCore.Localization.Json\My.AspNetCore.Localization.Json.csproj", "{1EEBEF0C-9B93-435D-83C5-F2711685ECCD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "My.AspNetCore.Localization.Json.Tests", "test\My.AspNetCore.Localization.Json.Tests\My.AspNetCore.Localization.Json.Tests.csproj", "{94644922-AAF0-4E84-9DEC-F9D496F6E0F1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocalizationSample", "samples\LocalizationSample\LocalizationSample.csproj", "{916C07DE-5446-41D7-B1BD-2593C3814BC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EEBEF0C-9B93-435D-83C5-F2711685ECCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EEBEF0C-9B93-435D-83C5-F2711685ECCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EEBEF0C-9B93-435D-83C5-F2711685ECCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EEBEF0C-9B93-435D-83C5-F2711685ECCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94644922-AAF0-4E84-9DEC-F9D496F6E0F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94644922-AAF0-4E84-9DEC-F9D496F6E0F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94644922-AAF0-4E84-9DEC-F9D496F6E0F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94644922-AAF0-4E84-9DEC-F9D496F6E0F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{916C07DE-5446-41D7-B1BD-2593C3814BC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{916C07DE-5446-41D7-B1BD-2593C3814BC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{916C07DE-5446-41D7-B1BD-2593C3814BC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{916C07DE-5446-41D7-B1BD-2593C3814BC3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1EEBEF0C-9B93-435D-83C5-F2711685ECCD} = {E710E87F-43E3-4D6D-8A27-6B750C7E14F2}
+		{94644922-AAF0-4E84-9DEC-F9D496F6E0F1} = {F41584D0-6C11-4532-B4C3-8382ED98540E}
+		{916C07DE-5446-41D7-B1BD-2593C3814BC3} = {162C7E4D-2DCE-4A22-9FEB-5211042DC1F7}
+	EndGlobalSection
+EndGlobal
