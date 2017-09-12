@@ -12,7 +12,7 @@ namespace LocalizationSample
 {
     public class LocalizationFixPageFactoryProvider : DefaultPageFactoryProvider
     {
-        public LocalizationPageFactoryProvider(
+        public LocalizationFixPageFactoryProvider(
             IPageActivatorProvider pageActivator,
             IModelMetadataProvider metadataProvider,
             IUrlHelperFactory urlHelperFactory,
