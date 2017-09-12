@@ -12,6 +12,8 @@ namespace My.AspNetCore.Localization.Json
     {
         public static readonly string DefaultJsonFileName = "AppSettings.json";
 
+        public static readonly string LocalizationSection = "Localization";
+
         public string JsonFileName { get; set; } = DefaultJsonFileName;
 
         public string CultureKey { get; set; } = "culture";
@@ -36,15 +38,16 @@ namespace My.AspNetCore.Localization.Json
 
             string culture = null;
             string uiCulture = null;
+            var localizationSection = Configuration.GetSection(LocalizationSection);
 
             if (!string.IsNullOrEmpty(CultureKey))
             {
-                culture = Configuration[$"Localization:{CultureKey}"];
+                culture = localizationSection[CultureKey];
             }
 
             if (!string.IsNullOrEmpty(UICultureKey))
             {
-                uiCulture = Configuration[$"Localization:{UICultureKey}"];
+                uiCulture = localizationSection[UICultureKey];
             }
 
             if (culture == null && uiCulture == null)
