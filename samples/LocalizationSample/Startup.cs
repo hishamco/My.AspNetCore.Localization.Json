@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Localization;
 using My.AspNetCore.Localization.Json;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace LocalizationSample
 {
@@ -12,6 +13,8 @@ namespace LocalizationSample
     {
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSingleton<IPageFactoryProvider, LocalizationFixPageFactoryProvider>();
+
             services.AddMvc()
                 .AddViewLocalization();
         }
